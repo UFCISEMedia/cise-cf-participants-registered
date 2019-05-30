@@ -138,6 +138,12 @@ function hwcoe_participants_registered_assets() {
 /*Plugin shortcode*/
 function reg_table_shortcode() {
 	
+	// Assets 
+	wp_enqueue_style( 'hwcoe-participants-datatables' );
+    wp_enqueue_style( 'participants-registered' );
+    wp_enqueue_script( 'hwcoe-participants-datatables' );
+    wp_enqueue_script( 'participants-registered' );
+	
 	//Query
 	$the_query = new WP_Query(array( 'post_type' => 'cf-registrations', 'posts_per_page' => 100 ));
 	
