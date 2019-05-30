@@ -9,7 +9,7 @@ Author URI: http://allisoncandreva.com/
 */
 
 /*Adds custom post type*/
-function create_post_type() {
+function create_participant_post_type() {
   register_post_type( 'cf-registrations',
     array(
       'labels' => array(
@@ -24,16 +24,16 @@ function create_post_type() {
     )
   );
 }
-add_action( 'init', 'create_post_type' );
+add_action( 'init', 'create_participant_post_type' );
 
 /*Add in custom columns in the admin panel*/
-add_filter( 'manage_edit-hwcoe-participants_columns', 'hwcoe_participants_columns' ) ;
+add_filter( 'manage_edit-cf-registrations_columns', 'cf_registrations_columns' ) ;
 
-function hwcoe_participants_columns( $columns ) {
+function cf_registrations_columns( $columns ) {
 
 	$columns = array(
 		'cb' => '&lt;input type="checkbox" />',
-		'name' => __( 'Name' ),
+		'title' => __( 'Title' ),
 		'email' => __( 'Email' ),
 		'status' => __( 'Status' ),
 		'department' => __( 'Department' ),
@@ -45,30 +45,19 @@ function hwcoe_participants_columns( $columns ) {
 	return $columns;
 }
 
-add_action( 'manage_hwcoe-participants_posts_custom_column', 'manage_participants_columns', 10, 2 );
+add_action( 'manage_cf-registrations_posts_custom_column', 'manage_cf_registrations_columns', 10, 2 );
 
 /*Pull in data for the custom columns*/
-function manage_participant_columns( $column, $post_id ) {
+function manage_cf_registrations_columns( $column, $post_id ) {
 	global $post;
 
 	switch( $column ) {
-
-		/* If displaying the 'name' column. */
-		case 'name' :
-
-			/* Get the post meta. */
-			$name = get_post_meta( $post_id, 'student_name', true );
-
-			/* Display the post meta. */
-			printf( $name );
-
-			break;
-
+			
 		/* If displaying the 'email' column. */
 		case 'email' :
 
 			/* Get the post meta. */
-			$email = get_post_meta( $post_id, 'stuent_email', true );
+			$email = get_post_meta( $post_id, 'student_email', true );
 
 			/* Display the post meta. */
 			printf( $email );
@@ -114,8 +103,13 @@ function manage_participant_columns( $column, $post_id ) {
 			/* Get the post meta. */
 			$resume = get_post_meta( $post_id, 'student_resume', true );
 
-			/* Display the post meta. */
-			printf( '<a href="' . $resume . '">Resume</a>');
+			/* If no resume is found, output a default message. */
+			if ( empty( $resume ) )
+				echo __( 'n/a' );
+			
+			/* If resume is uploaded, display the post meta. */
+			else
+				printf( '<a href="' . $resume . '">Resume</a>');
 
 			break;			
 
