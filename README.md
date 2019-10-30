@@ -20,6 +20,10 @@ For help installing this (or any other) WordPress plugin, please read the [Manag
 No. This change has been made within the plugin and there are no settings options for this plugin.
 
 ## Changelog
+1.0.1
+- Adds filter to student name input so output is always title case
+- Adds filter to email input so output is always lowercase
+- Adds function that renames the uploaded file to the registrant's lastname-firstname.pdf
 
 0.0.0 
 - Initial pre-release
