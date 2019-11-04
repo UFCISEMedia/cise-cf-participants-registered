@@ -130,86 +130,41 @@ function hwcoe_participants_registered_assets() {
 }
 
 /*Convert Name field to Title Case*/
-add_action('gform_pre_submission_1', 'capitalize_fields');
-function capitalize_fields($form){
+$theformID = RGFormsModel::get_form_id('Student Registration');
+//$thefieldID = RGFormsModel::get_field($theformID, 'name_first');
+
+add_action('gform_pre_submission', 'titlecase_fields');
+function titlecase_fields($form){
 	// add all the field IDs you want to capitalize, to this array
-	$fields_to_cap = array(
-						'input_20_3',
-						'input_20_6');
-	foreach ($fields_to_cap as $each) {
+	$form  = GFAPI::get_form( $theformID );
+	$fields_to_titlecase = array(
+						'input_2_3',
+						'input_2_6');
+	foreach ($fields_to_titlecase as $each) {
 			// for each field, convert the submitted value to uppercase and assign back to the POST variable
 			// the rgpost function strips slashes
 			$lowercase = strtolower(rgpost($each));
 			$_POST[$each] = ucwords($lowercase);
-	}
+		} 
 	// return the form, even though we did not modify it
-	return $form;}
-	
+	return $form;
+}//end field titlecaseing
+
 /*Convert Email field to Lowercase*/
-add_action('gform_pre_submission_1', 'lowercase_fields');
+add_action('gform_pre_submission', 'lowercase_fields');
 function lowercase_fields($form){
 	// add all the field IDs you want to capitalize, to this array
-	$fields_to_cap = array(
-						'input_15');
-	foreach ($fields_to_cap as $each) {
+	$form  = GFAPI::get_form( $theformID );
+	$fields_to_lower = array(
+				'input_4');
+	foreach ($fields_to_lower as $each) {
 			// for each field, convert the submitted value to uppercase and assign back to the POST variable
 			// the rgpost function strips slashes
 			$_POST[$each]= strtolower(rgpost($each));
 	}
 	// return the form, even though we did not modify it
-	return $form;}
-	
-/*Plugin shortcode*/
-function reg_table_shortcode() {
-	
-	// Assets 
-	wp_enqueue_style( 'hwcoe-participants-datatables' );
-    wp_enqueue_style( 'participants-registered' );
-    wp_enqueue_script( 'hwcoe-participants-datatables' );
-    wp_enqueue_script( 'participants-registered' );
-	
-	//Query
-	$the_query = new WP_Query(array( 'post_type' => 'cf-registrations', 'posts_per_page' => 100 ));
-	
-	//Table
-	$output = '<table id="reg-table">
-				<thead>
-					<tr>
-						<th>Name</th>
-						<th>Email</th>
-						<th>Status</th>
-						<th>Department</th>
-						<th>Visa</th>
-						<th>Resume</th>
-					</tr>
-				</thead>
-				<tbody>';
-	
-	while ( $the_query->have_posts() ) : $the_query->the_post();
-			$output .= '<tr>
-							<td>' .get_field( 'student_name' ). '</td>
-							<td>' .get_field( 'student_email' ). '</td>
-							<td>' .get_field( 'student_status' ). '</td>
-							<td>' .get_field( 'student_department' ). '</td>
-							<td>' .get_field( 'student_visa_sponsorship' ). '</td>';
-				if(get_field( 'student_resume' )):  //if the field is not empty
-				$output .= '<td><a href="' .get_field( 'student_resume' ). '" download>Resume: ' .get_field( 'student_name' ). '</a></td>'; //display it
-					else: 
-			$output .= '<td>n/a</td>';
-					endif; 
-			$output .= '</tr>';
-	endwhile;
-	wp_reset_query();
-	
-	$output .= '</tbody>
-				</table>';
-	
-	//Return code
-	return $output;
-}
-
-add_shortcode('registration_table', 'reg_table_shortcode'); 
-
+	return $form;
+}//end field lowercasing
 
 /**
  * Gravity Wiz // Gravity Forms // Rename Uploaded Files
@@ -403,8 +358,8 @@ class GW_Rename_Uploaded_Files {
 			$template = $info['dirname'] . '/' . $template;
 		}
 		
-		// removes the original file name
-		$newname = str_replace($info['filename'], "_");
+		// removes the original file name - Added by Allison Logan
+		$newname = str_replace($info['filename'], "", $info['filename']);
 		
 		// replace our custom "{filename}" psuedo-merge-tag
 		$value = str_replace( '{filename}', $newname, $template );
@@ -481,7 +436,58 @@ class GW_Rename_Uploaded_Files {
 # Configuration
 
 new GW_Rename_Uploaded_Files( array(
-	'form_id' => 1,
-	'field_id' => 19,
-	'template' => '{Name (Last):20.6}-{Name (First):20.3}-{filename}' // most merge tags are supported, original file extension is preserved
-) );
+	'form_id' => $theformID,
+	'field_id' => 9,
+	'template' => '{Name (Last):2.6}-{Name (First):2.3}-{filename}' 
+) ); //end file renaming 
+
+/*Plugin shortcode*/
+function reg_table_shortcode() {
+	
+	// Assets 
+	wp_enqueue_style( 'hwcoe-participants-datatables' );
+    wp_enqueue_style( 'participants-registered' );
+    wp_enqueue_script( 'hwcoe-participants-datatables' );
+    wp_enqueue_script( 'participants-registered' );
+	
+	//Query
+	$the_query = new WP_Query(array( 'post_type' => 'cf-registrations', 'posts_per_page' => 100 ));
+	
+	//Table
+	$output = '<table id="reg-table">
+				<thead>
+					<tr>
+						<th>Name</th>
+						<th>Email</th>
+						<th>Status</th>
+						<th>Department</th>
+						<th>Visa</th>
+						<th>Resume</th>
+					</tr>
+				</thead>
+				<tbody>';
+	
+	while ( $the_query->have_posts() ) : $the_query->the_post();
+			$output .= '<tr>
+							<td>' .get_field( 'student_name' ). '</td>
+							<td>' .get_field( 'student_email' ). '</td>
+							<td>' .get_field( 'student_status' ). '</td>
+							<td>' .get_field( 'student_department' ). '</td>
+							<td>' .get_field( 'student_visa_sponsorship' ). '</td>';
+				if(get_field( 'student_resume' )):  //if the field is not empty
+				$output .= '<td><a href="' .get_field( 'student_resume' ). '" download>Resume: ' .get_field( 'student_name' ). '</a></td>'; //display it
+					else: 
+			$output .= '<td>n/a</td>';
+					endif; 
+			$output .= '</tr>';
+	endwhile;
+	wp_reset_query();
+	
+	$output .= '</tbody>
+				</table>';
+	
+	//Return code
+	return $output;
+}
+
+add_shortcode('registration_table', 'reg_table_shortcode'); 
