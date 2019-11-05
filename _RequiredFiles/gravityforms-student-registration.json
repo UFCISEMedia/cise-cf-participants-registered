@@ -1,1 +1,463 @@
-{"0":{"title":"Student Registration","description":"","labelPlacement":"top_label","descriptionPlacement":"below","button":{"type":"text","text":"Submit","imageUrl":""},"fields":[{"type":"post_title","id":1,"label":"Post Title","adminLabel":"","isRequired":false,"size":"medium","errorMessage":"","visibility":"hidden","inputs":null,"formId":1,"description":"","allowsPrepopulate":false,"inputMask":false,"inputMaskValue":"","inputMaskIsCustom":false,"maxLength":"","inputType":"","labelPlacement":"","descriptionPlacement":"","subLabelPlacement":"","placeholder":"","cssClass":"","inputName":"","noDuplicates":false,"defaultValue":"","choices":"","conditionalLogic":"","productField":"","multipleFiles":false,"maxFiles":"","calculationFormula":"","calculationRounding":"","enableCalculation":"","disableQuantity":false,"displayAllCategories":false,"useRichTextEditor":false,"saveAsCPT":"cf-registrations","fields":"","displayOnly":"","personalDataExport":false,"personalDataErase":false},{"type":"name","id":2,"label":"Name","adminLabel":"","isRequired":true,"size":"medium","errorMessage":"","visibility":"visible","nameFormat":"advanced","inputs":[{"id":"2.2","label":"Prefix","name":"","choices":[{"text":"Mr.","value":"Mr.","isSelected":false,"price":""},{"text":"Mrs.","value":"Mrs.","isSelected":false,"price":""},{"text":"Miss","value":"Miss","isSelected":false,"price":""},{"text":"Ms.","value":"Ms.","isSelected":false,"price":""},{"text":"Dr.","value":"Dr.","isSelected":false,"price":""},{"text":"Prof.","value":"Prof.","isSelected":false,"price":""},{"text":"Rev.","value":"Rev.","isSelected":false,"price":""}],"isHidden":true,"inputType":"radio"},{"id":"2.3","label":"First","name":""},{"id":"2.4","label":"Middle","name":"","isHidden":true},{"id":"2.6","label":"Last","name":""},{"id":"2.8","label":"Suffix","name":"","isHidden":true}],"formId":1,"description":"","allowsPrepopulate":false,"inputMask":false,"inputMaskValue":"","inputMaskIsCustom":false,"maxLength":"","inputType":"","labelPlacement":"","descriptionPlacement":"","subLabelPlacement":"","placeholder":"","cssClass":"","inputName":"","noDuplicates":false,"defaultValue":"","choices":"","conditionalLogic":"","productField":"","multipleFiles":false,"maxFiles":"","calculationFormula":"","calculationRounding":"","enableCalculation":"","disableQuantity":false,"displayAllCategories":false,"useRichTextEditor":false,"fields":"","displayOnly":"","personalDataExport":false,"personalDataErase":false},{"type":"post_custom_field","id":3,"label":"Student Name","adminLabel":"","isRequired":false,"size":"medium","errorMessage":"","visibility":"hidden","inputs":null,"inputType":"text","formId":1,"description":"","allowsPrepopulate":false,"inputMask":false,"inputMaskValue":"","inputMaskIsCustom":false,"maxLength":"","labelPlacement":"","descriptionPlacement":"","subLabelPlacement":"","placeholder":"","cssClass":"","inputName":"","noDuplicates":false,"defaultValue":"","choices":"","conditionalLogic":"","productField":"","enablePasswordInput":"","multipleFiles":false,"maxFiles":"","calculationFormula":"","calculationRounding":"","enableCalculation":"","disableQuantity":false,"displayAllCategories":false,"useRichTextEditor":false,"customFieldTemplate":"{Name (Last):2.6}, {Name (First):2.3}","customFieldTemplateEnabled":true,"fields":"","displayOnly":"","postCustomFieldName":"student_name","personalDataExport":false,"personalDataErase":false},{"type":"post_custom_field","id":4,"label":"Email","adminLabel":"","isRequired":false,"size":"medium","errorMessage":"","visibility":"visible","inputs":null,"inputType":"email","formId":1,"description":"","allowsPrepopulate":false,"inputMask":false,"inputMaskValue":"","inputMaskIsCustom":false,"maxLength":"","labelPlacement":"","descriptionPlacement":"","subLabelPlacement":"","placeholder":"","cssClass":"","inputName":"","noDuplicates":false,"defaultValue":"","choices":null,"conditionalLogic":"","productField":"","enablePasswordInput":"","multipleFiles":false,"maxFiles":"","calculationFormula":"","calculationRounding":"","enableCalculation":"","disableQuantity":false,"displayAllCategories":false,"useRichTextEditor":false,"postCustomFieldName":"student_email","customFieldTemplate":"","customFieldTemplateEnabled":false,"fields":"","displayOnly":"","checkboxLabel":"","personalDataExport":false,"personalDataErase":false},{"type":"text","id":5,"label":"UFID","adminLabel":"","isRequired":true,"size":"medium","errorMessage":"","visibility":"visible","inputs":null,"formId":1,"description":"","allowsPrepopulate":false,"inputMask":true,"inputMaskValue":"9999-9999","inputMaskIsCustom":true,"maxLength":"","inputType":"","labelPlacement":"","descriptionPlacement":"","subLabelPlacement":"","placeholder":"1234-5678","cssClass":"","inputName":"","noDuplicates":true,"defaultValue":"","choices":"","conditionalLogic":"","productField":"","enablePasswordInput":"","multipleFiles":false,"maxFiles":"","calculationFormula":"","calculationRounding":"","enableCalculation":"","disableQuantity":false,"displayAllCategories":false,"useRichTextEditor":false,"fields":"","displayOnly":"","personalDataExport":false,"personalDataErase":false},{"type":"post_custom_field","id":6,"label":"Status","adminLabel":"","isRequired":true,"size":"medium","errorMessage":"","visibility":"visible","inputs":null,"inputType":"radio","formId":1,"description":"","allowsPrepopulate":false,"inputMask":false,"inputMaskValue":"","inputMaskIsCustom":false,"maxLength":"","labelPlacement":"","descriptionPlacement":"","subLabelPlacement":"","placeholder":"","cssClass":"","inputName":"","noDuplicates":false,"defaultValue":"","choices":[{"text":"Undergraduate","value":"Undergraduate","isSelected":false,"price":""},{"text":"Graduate","value":"Graduate","isSelected":false,"price":""},{"text":"Alumni","value":"Alumni","isSelected":false,"price":""}],"conditionalLogic":"","productField":"","enablePasswordInput":"","multipleFiles":false,"maxFiles":"","calculationFormula":"","calculationRounding":"","enableCalculation":"","disableQuantity":false,"displayAllCategories":false,"useRichTextEditor":false,"postCustomFieldName":"student_status","customFieldTemplate":"","customFieldTemplateEnabled":false,"fields":"","displayOnly":"","checkboxLabel":"","personalDataExport":false,"personalDataErase":false},{"type":"post_custom_field","id":7,"label":"Department","adminLabel":"","isRequired":true,"size":"medium","errorMessage":"","visibility":"visible","inputs":null,"inputType":"radio","formId":1,"description":"","allowsPrepopulate":false,"inputMask":false,"inputMaskValue":"","inputMaskIsCustom":false,"maxLength":"","labelPlacement":"","descriptionPlacement":"","subLabelPlacement":"","placeholder":"","cssClass":"","inputName":"","noDuplicates":false,"defaultValue":"","choices":[{"text":"CISE","value":"CISE","isSelected":false,"price":""},{"text":"ECE","value":"ECE","isSelected":false,"price":""}],"conditionalLogic":"","productField":"","enablePasswordInput":"","multipleFiles":false,"maxFiles":"","calculationFormula":"","calculationRounding":"","enableCalculation":"","disableQuantity":false,"displayAllCategories":false,"useRichTextEditor":false,"postCustomFieldName":"student_department","customFieldTemplate":"","customFieldTemplateEnabled":false,"fields":"","displayOnly":"","checkboxLabel":"","enableOtherChoice":true,"personalDataExport":false,"personalDataErase":false},{"type":"post_custom_field","id":8,"label":"Visa Sponsorship","adminLabel":"","isRequired":true,"size":"medium","errorMessage":"","visibility":"visible","inputs":null,"inputType":"radio","formId":1,"description":"","allowsPrepopulate":false,"inputMask":false,"inputMaskValue":"","inputMaskIsCustom":false,"maxLength":"","labelPlacement":"","descriptionPlacement":"","subLabelPlacement":"","placeholder":"","cssClass":"","inputName":"","noDuplicates":false,"defaultValue":"","choices":[{"text":"Yes","value":"Yes","isSelected":false,"price":""},{"text":"No","value":"No","isSelected":false,"price":""}],"conditionalLogic":"","productField":"","enablePasswordInput":"","multipleFiles":false,"maxFiles":"","calculationFormula":"","calculationRounding":"","enableCalculation":"","disableQuantity":false,"displayAllCategories":false,"useRichTextEditor":false,"postCustomFieldName":"student_visa_sponsorship","customFieldTemplate":"","customFieldTemplateEnabled":false,"fields":"","displayOnly":"","checkboxLabel":"","personalDataExport":false,"personalDataErase":false},{"type":"post_custom_field","id":9,"label":"Resume Upload","adminLabel":"","isRequired":false,"size":"medium","errorMessage":"","visibility":"visible","inputs":null,"inputType":"fileupload","formId":1,"description":"Registrants now have the option to upload a resume, which will be available to attending companies. Attendees should still bring copies of their resumes on event day. \nFile names should be Lastname-Firstname.pdf so resumes can be easily found.","allowsPrepopulate":false,"inputMask":false,"inputMaskValue":"","inputMaskIsCustom":false,"maxLength":"","labelPlacement":"","descriptionPlacement":"above","subLabelPlacement":"","placeholder":"","cssClass":"","inputName":"","noDuplicates":false,"defaultValue":"","choices":null,"conditionalLogic":"","productField":"","enablePasswordInput":"","multipleFiles":false,"maxFiles":"","calculationFormula":"","calculationRounding":"","enableCalculation":"","disableQuantity":false,"displayAllCategories":false,"useRichTextEditor":false,"postCustomFieldName":"student_resume","customFieldTemplate":"","customFieldTemplateEnabled":false,"fields":"","displayOnly":"","checkboxLabel":"","maxFileSize":2,"allowedExtensions":"pdf","personalDataExport":false,"personalDataErase":false},{"type":"captcha","id":10,"label":"CAPTCHA","adminLabel":"","isRequired":false,"size":"medium","errorMessage":"","visibility":"visible","inputs":null,"displayOnly":true,"formId":1,"description":"","allowsPrepopulate":false,"inputMask":false,"inputMaskValue":"","inputMaskIsCustom":false,"maxLength":"","inputType":"","labelPlacement":"","descriptionPlacement":"","subLabelPlacement":"","placeholder":"","cssClass":"","inputName":"","noDuplicates":false,"defaultValue":"","choices":"","conditionalLogic":"","productField":"","captchaType":"","captchaTheme":"","fields":"","personalDataExport":false,"personalDataErase":false,"multipleFiles":false,"maxFiles":"","calculationFormula":"","calculationRounding":"","enableCalculation":"","disableQuantity":false,"displayAllCategories":false,"useRichTextEditor":false},{"type":"date","id":11,"label":"Date","adminLabel":"","isRequired":true,"size":"medium","errorMessage":"","visibility":"hidden","inputs":null,"dateType":"datepicker","calendarIconType":"none","formId":1,"description":"","allowsPrepopulate":false,"inputMask":false,"inputMaskValue":"","inputMaskIsCustom":false,"maxLength":"","inputType":"","labelPlacement":"","descriptionPlacement":"","subLabelPlacement":"","placeholder":"","cssClass":"","inputName":"","noDuplicates":false,"defaultValue":"{date_mdy}","choices":"","conditionalLogic":"","calendarIconUrl":"","dateFormat":"mdy","productField":"","multipleFiles":false,"maxFiles":"","calculationFormula":"","calculationRounding":"","enableCalculation":"","disableQuantity":false,"displayAllCategories":false,"useRichTextEditor":false,"fields":"","displayOnly":"","personalDataExport":false,"personalDataErase":false}],"version":"2.4.14","id":1,"nextFieldId":12,"useCurrentUserAsAuthor":true,"postContentTemplateEnabled":false,"postTitleTemplateEnabled":true,"postTitleTemplate":"{Name (Last):2.6}, {Name (First):2.3}","postContentTemplate":"","lastPageButton":null,"pagination":null,"firstPageCssClass":null,"subLabelPlacement":"below","cssClass":"","enableHoneypot":false,"enableAnimation":false,"save":{"enabled":false,"button":{"type":"link","text":"Save and Continue Later"}},"limitEntries":false,"limitEntriesCount":"","limitEntriesPeriod":"","limitEntriesMessage":"","scheduleForm":true,"scheduleStart":"10\/28\/2019","scheduleStartHour":12,"scheduleStartMinute":1,"scheduleStartAmpm":"am","scheduleEnd":"01\/23\/2020","scheduleEndHour":6,"scheduleEndMinute":1,"scheduleEndAmpm":"pm","schedulePendingMessage":"<img src=\"\/wp-content\/uploads\/2019\/04\/closed.png\" alt=\"registration not open\" class=\"form-message-img\">\r\n<h2 class=\"form-message\">Registration is currently closed.<\/h2>\r\n<p class=\"form-message\">Thanks for stopping by. Registration for the [insert page='career-fair-information' display='page-templates\/event-info-semester.php'][insert page='career-fair-information' display='page-templates\/event-info-year.php'] [insert page='career-fair-information' display='page-templates\/event-info-display-name.php'] will open on [insert page='career-fair-information' display='page-templates\/event-info-stud-open.php']<\/p>","scheduleMessage":"<img src=\"\/wp-content\/uploads\/2019\/04\/closed.png\" alt=\"registration not open\" class=\"form-message-img\"><h2 class=\"form-message\">Registration is now closed.<\/h2>\r\n<p class=\"form-message\">If you were unable to register online, you can still attend the [insert page='career-fair-information' display='page-templates\/event-info-semester.php'][insert page='career-fair-information' display='page-templates\/event-info-year.php'] [insert page='career-fair-information' display='page-templates\/event-info-display-name.php']. Just be sure to bring your GatorOne ID to register at the check-in desk on the event day.<\/p>","requireLogin":false,"requireLoginMessage":"","is_active":"1","date_created":"2019-04-18 19:18:40","is_trash":"0","personalData":{"preventIP":false,"retention":{"policy":"retain","retain_entries_days":1},"exportingAndErasing":{"columns":{"ip":{"export":false,"erase":false},"source_url":{"export":false,"erase":false},"user_agent":{"export":false,"erase":false}},"enabled":false,"identificationField":""}},"postAuthor":"1","postCategory":"1","postFormat":0,"postStatus":"draft","confirmations":[{"id":"5cb8cd9025900","name":"Default Confirmation","isDefault":true,"type":"message","message":"<p>Thanks for registering! We look forward to seeing you at the [insert page='career-fair-information' display='page-templates\/event-info-display-name.php']. Review the <a href=\"\/students\/\">Student Page<\/a> for interviewing tips and attire guidelines.<\/p><h3 style=\"text-align: center;\">Event Details:<\/h3><p style=\"text-align: center;\"><strong>Date<\/strong>: [insert page='career-fair-information' display='page-templates\/event-info-date-comma.php'][insert page='career-fair-information' display='page-templates\/event-info-year.php' inline] <br \/><strong>Time<\/strong>: [insert page='career-fair-information' display='page-templates\/event-info-start-time.php']to [insert page='career-fair-information' display='page-templates\/event-info-end-time.php']\u00a0<br \/><strong>Location<\/strong>: [insert page='career-fair-information' display='page-templates\/event-info-location.php']<\/p>","url":"","pageId":0,"queryString":"","disableAutoformat":false,"conditionalLogic":[]}],"notifications":[{"id":"5cb8cd9023187","isActive":false,"to":"{admin_email}","name":"Admin Notification","event":"form_submission","toType":"email","subject":"New submission from {form_title}","message":"{all_fields}"},{"isActive":true,"name":"Registrant Notification","service":"wordpress","event":"form_submission","to":"15","toType":"field","cc":"","bcc":"","subject":"Registration Confirmation - CISE Career Fair","message":"<img class=\"aligncenter wp-image-51 size-page_header\" src=\"https:\/\/test.careerfair.cise.ufl.edu\/wp-content\/uploads\/2019\/03\/frenchfries-780x274.png\" alt=\"French fry hero\" width=\"780\" height=\"274\" \/>\r\n<p style=\"font-size: 16px;\">Thank you for registering! We look forward to seeing you at the [insert page='career-fair-information' display='page-templates\/event-info-display-name.php']. Review the <a href=\"https:\/\/test.careerfair.cise.ufl.edu\/students\/\">Student Page<\/a> for interviewing tips and attire guidelines.<\/p>\r\n<span style=\"font-size: 18px;\"><strong>Registration Details:<\/strong><\/span>\r\n\r\n<span style=\"font-size: 16px;\"><strong>Name:<\/strong> {Name (First):20.3} {Name (Last):20.6}<\/span>\r\n\r\n<span style=\"font-size: 16px;\"><strong>UFID:<\/strong> {UFID:2}<\/span>\r\n\r\n<span style=\"font-size: 16px;\"><strong>Status:<\/strong> {Status:16}<\/span>\r\n\r\n<span style=\"font-size: 16px;\"><strong>Department:<\/strong> {Department:17}<\/span>\r\n\r\n<span style=\"font-size: 16px;\"><strong>Visa Sponsorship: <\/strong>{Visa Sponsorship:18}<\/span>\r\n\r\n<span style=\"font-size: 16px;\"><strong>Resume:<\/strong> {Resume Upload:19}<\/span>\r\n<p style=\"text-align: center; font-size: 14px;\"><em>**NOTE: <a href=\"mailto:webmaster@cise.ufl.edu?subject=Registration%20Update%20CISE%20Career%20Fair&amp;body=Please%20fill%20out%20the%20following%20information.%0D%0A%0D%0AYour%20name:%0D%0A%0D%0APreferred%20contact%20email:%0D%0A%0D%0AInformation%20needing%20to%20be%20updated:%0D%0A%0D%0A\">Contact us<\/a> if you would like to make any changes to your registration.**<\/em><\/p>\r\n<p style=\"text-align: center;\"><span style=\"font-size: 18px;\"><strong>Event Details:<\/strong><\/span>\r\n<span style=\"font-size: 16px;\"><strong>Date<\/strong>: [insert page='career-fair-information' display='page-templates\/event-info-date-comma.php'][insert page='career-fair-information' display='page-templates\/event-info-year.php' inline]\r\n<strong>Time<\/strong>: [insert page='career-fair-information' display='page-templates\/event-info-start-time.php']to [insert page='career-fair-information' display='page-templates\/event-info-end-time.php']\r\n<strong>Location<\/strong>: [insert page='career-fair-information' display='page-templates\/event-info-location.php']<\/span><\/p>","from":"{admin_email}","fromName":"CISE Career Fair","replyTo":"","routing":null,"conditionalLogic":null,"disableAutoformat":false,"enableAttachments":false,"id":"5d5e92da3000f"}]},"version":"2.4.14"}
+{
+    "0": {
+        "title":"Student Registration",
+        "description":"",
+        "labelPlacement":"top_label",
+        "descriptionPlacement":"below",
+        "button": {
+            "type": "text", "text": "Submit", "imageUrl": ""
+        }
+        ,
+        "fields":[ {
+            "type": "post_title", "id": 1, "label": "Post Title", "adminLabel": "", "isRequired": false, "size": "medium", "errorMessage": "", "visibility": "hidden", "inputs": null, "formId": 1, "description": "", "allowsPrepopulate": false, "inputMask": false, "inputMaskValue": "", "inputMaskIsCustom": false, "maxLength": "", "inputType": "", "labelPlacement": "", "descriptionPlacement": "", "subLabelPlacement": "", "placeholder": "", "cssClass": "", "inputName": "", "noDuplicates": false, "defaultValue": "", "choices": "", "conditionalLogic": "", "productField": "", "multipleFiles": false, "maxFiles": "", "calculationFormula": "", "calculationRounding": "", "enableCalculation": "", "disableQuantity": false, "displayAllCategories": false, "useRichTextEditor": false, "saveAsCPT": "cf-registrations", "fields": "", "displayOnly": "", "personalDataExport": false, "personalDataErase": false
+        }
+        ,
+        {
+            "type":"name",
+            "id":2,
+            "label":"Name",
+            "adminLabel":"",
+            "isRequired":true,
+            "size":"medium",
+            "errorMessage":"",
+            "visibility":"visible",
+            "nameFormat":"advanced",
+            "inputs":[ {
+                "id":"2.2",
+                "label":"Prefix",
+                "name":"",
+                "choices":[ {
+                    "text": "Mr.", "value": "Mr.", "isSelected": false, "price": ""
+                }
+                ,
+                {
+                    "text": "Mrs.", "value": "Mrs.", "isSelected": false, "price": ""
+                }
+                ,
+                {
+                    "text": "Miss", "value": "Miss", "isSelected": false, "price": ""
+                }
+                ,
+                {
+                    "text": "Ms.", "value": "Ms.", "isSelected": false, "price": ""
+                }
+                ,
+                {
+                    "text": "Dr.", "value": "Dr.", "isSelected": false, "price": ""
+                }
+                ,
+                {
+                    "text": "Prof.", "value": "Prof.", "isSelected": false, "price": ""
+                }
+                ,
+                {
+                    "text": "Rev.", "value": "Rev.", "isSelected": false, "price": ""
+                }
+                ],
+                "isHidden":true,
+                "inputType":"radio"
+            }
+            ,
+            {
+                "id": "2.3", "label": "First", "name": ""
+            }
+            ,
+            {
+                "id": "2.4", "label": "Middle", "name": "", "isHidden": true
+            }
+            ,
+            {
+                "id": "2.6", "label": "Last", "name": ""
+            }
+            ,
+            {
+                "id": "2.8", "label": "Suffix", "name": "", "isHidden": true
+            }
+            ],
+            "formId":1,
+            "description":"",
+            "allowsPrepopulate":false,
+            "inputMask":false,
+            "inputMaskValue":"",
+            "inputMaskIsCustom":false,
+            "maxLength":"",
+            "inputType":"",
+            "labelPlacement":"",
+            "descriptionPlacement":"",
+            "subLabelPlacement":"",
+            "placeholder":"",
+            "cssClass":"",
+            "inputName":"",
+            "noDuplicates":false,
+            "defaultValue":"",
+            "choices":"",
+            "conditionalLogic":"",
+            "productField":"",
+            "multipleFiles":false,
+            "maxFiles":"",
+            "calculationFormula":"",
+            "calculationRounding":"",
+            "enableCalculation":"",
+            "disableQuantity":false,
+            "displayAllCategories":false,
+            "useRichTextEditor":false,
+            "fields":"",
+            "displayOnly":"",
+            "personalDataExport":false,
+            "personalDataErase":false
+        }
+        ,
+        {
+            "type":"post_custom_field",
+            "id":3,
+            "label":"Student Name",
+            "adminLabel":"",
+            "isRequired":false,
+            "size":"medium",
+            "errorMessage":"",
+            "visibility":"hidden",
+            "inputs":null,
+            "inputType":"text",
+            "formId":1,
+            "description":"",
+            "allowsPrepopulate":false,
+            "inputMask":false,
+            "inputMaskValue":"",
+            "inputMaskIsCustom":false,
+            "maxLength":"",
+            "labelPlacement":"",
+            "descriptionPlacement":"",
+            "subLabelPlacement":"",
+            "placeholder":"",
+            "cssClass":"",
+            "inputName":"",
+            "noDuplicates":false,
+            "defaultValue":"",
+            "choices":"",
+            "conditionalLogic":"",
+            "productField":"",
+            "enablePasswordInput":"",
+            "multipleFiles":false,
+            "maxFiles":"",
+            "calculationFormula":"",
+            "calculationRounding":"",
+            "enableCalculation":"",
+            "disableQuantity":false,
+            "displayAllCategories":false,
+            "useRichTextEditor":false,
+            "customFieldTemplate":"{Name (Last):2.6}, {Name (First):2.3}",
+            "customFieldTemplateEnabled": true, "fields": "", "displayOnly": "", "postCustomFieldName": "student_name", "personalDataExport": false, "personalDataErase": false
+        }
+        ,
+        {
+            "type": "post_custom_field", "id": 4, "label": "Email", "adminLabel": "", "isRequired": false, "size": "medium", "errorMessage": "", "visibility": "visible", "inputs": null, "inputType": "email", "formId": 1, "description": "", "allowsPrepopulate": false, "inputMask": false, "inputMaskValue": "", "inputMaskIsCustom": false, "maxLength": "", "labelPlacement": "", "descriptionPlacement": "", "subLabelPlacement": "", "placeholder": "", "cssClass": "", "inputName": "", "noDuplicates": false, "defaultValue": "", "choices": null, "conditionalLogic": "", "productField": "", "enablePasswordInput": "", "multipleFiles": false, "maxFiles": "", "calculationFormula": "", "calculationRounding": "", "enableCalculation": "", "disableQuantity": false, "displayAllCategories": false, "useRichTextEditor": false, "postCustomFieldName": "student_email", "customFieldTemplate": "", "customFieldTemplateEnabled": false, "fields": "", "displayOnly": "", "checkboxLabel": "", "personalDataExport": false, "personalDataErase": false
+        }
+        ,
+        {
+            "type": "text", "id": 5, "label": "UFID", "adminLabel": "", "isRequired": true, "size": "medium", "errorMessage": "", "visibility": "visible", "inputs": null, "formId": 1, "description": "", "allowsPrepopulate": false, "inputMask": true, "inputMaskValue": "9999-9999", "inputMaskIsCustom": true, "maxLength": "", "inputType": "", "labelPlacement": "", "descriptionPlacement": "", "subLabelPlacement": "", "placeholder": "1234-5678", "cssClass": "", "inputName": "", "noDuplicates": true, "defaultValue": "", "choices": "", "conditionalLogic": "", "productField": "", "enablePasswordInput": "", "multipleFiles": false, "maxFiles": "", "calculationFormula": "", "calculationRounding": "", "enableCalculation": "", "disableQuantity": false, "displayAllCategories": false, "useRichTextEditor": false, "fields": "", "displayOnly": "", "personalDataExport": false, "personalDataErase": false
+        }
+        ,
+        {
+            "type":"post_custom_field",
+            "id":6,
+            "label":"Status",
+            "adminLabel":"",
+            "isRequired":true,
+            "size":"medium",
+            "errorMessage":"",
+            "visibility":"visible",
+            "inputs":null,
+            "inputType":"radio",
+            "formId":1,
+            "description":"",
+            "allowsPrepopulate":false,
+            "inputMask":false,
+            "inputMaskValue":"",
+            "inputMaskIsCustom":false,
+            "maxLength":"",
+            "labelPlacement":"",
+            "descriptionPlacement":"",
+            "subLabelPlacement":"",
+            "placeholder":"",
+            "cssClass":"",
+            "inputName":"",
+            "noDuplicates":false,
+            "defaultValue":"",
+            "choices":[ {
+                "text": "Undergraduate", "value": "Undergraduate", "isSelected": false, "price": ""
+            }
+            ,
+            {
+                "text": "Graduate", "value": "Graduate", "isSelected": false, "price": ""
+            }
+            ,
+            {
+                "text": "Alumni", "value": "Alumni", "isSelected": false, "price": ""
+            }
+            ],
+            "conditionalLogic":"",
+            "productField":"",
+            "enablePasswordInput":"",
+            "multipleFiles":false,
+            "maxFiles":"",
+            "calculationFormula":"",
+            "calculationRounding":"",
+            "enableCalculation":"",
+            "disableQuantity":false,
+            "displayAllCategories":false,
+            "useRichTextEditor":false,
+            "postCustomFieldName":"student_status",
+            "customFieldTemplate":"",
+            "customFieldTemplateEnabled":false,
+            "fields":"",
+            "displayOnly":"",
+            "checkboxLabel":"",
+            "personalDataExport":false,
+            "personalDataErase":false
+        }
+        ,
+        {
+            "type":"post_custom_field",
+            "id":7,
+            "label":"Department",
+            "adminLabel":"",
+            "isRequired":true,
+            "size":"medium",
+            "errorMessage":"",
+            "visibility":"visible",
+            "inputs":null,
+            "inputType":"radio",
+            "formId":1,
+            "description":"",
+            "allowsPrepopulate":false,
+            "inputMask":false,
+            "inputMaskValue":"",
+            "inputMaskIsCustom":false,
+            "maxLength":"",
+            "labelPlacement":"",
+            "descriptionPlacement":"",
+            "subLabelPlacement":"",
+            "placeholder":"",
+            "cssClass":"",
+            "inputName":"",
+            "noDuplicates":false,
+            "defaultValue":"",
+            "choices":[ {
+                "text": "CISE", "value": "CISE", "isSelected": false, "price": ""
+            }
+            ,
+            {
+                "text": "ECE", "value": "ECE", "isSelected": false, "price": ""
+            }
+            ],
+            "conditionalLogic":"",
+            "productField":"",
+            "enablePasswordInput":"",
+            "multipleFiles":false,
+            "maxFiles":"",
+            "calculationFormula":"",
+            "calculationRounding":"",
+            "enableCalculation":"",
+            "disableQuantity":false,
+            "displayAllCategories":false,
+            "useRichTextEditor":false,
+            "postCustomFieldName":"student_department",
+            "customFieldTemplate":"",
+            "customFieldTemplateEnabled":false,
+            "fields":"",
+            "displayOnly":"",
+            "checkboxLabel":"",
+            "enableOtherChoice":true,
+            "personalDataExport":false,
+            "personalDataErase":false
+        }
+        ,
+        {
+            "type":"post_custom_field",
+            "id":8,
+            "label":"Visa Sponsorship",
+            "adminLabel":"",
+            "isRequired":true,
+            "size":"medium",
+            "errorMessage":"",
+            "visibility":"visible",
+            "inputs":null,
+            "inputType":"radio",
+            "formId":1,
+            "description":"",
+            "allowsPrepopulate":false,
+            "inputMask":false,
+            "inputMaskValue":"",
+            "inputMaskIsCustom":false,
+            "maxLength":"",
+            "labelPlacement":"",
+            "descriptionPlacement":"",
+            "subLabelPlacement":"",
+            "placeholder":"",
+            "cssClass":"",
+            "inputName":"",
+            "noDuplicates":false,
+            "defaultValue":"",
+            "choices":[ {
+                "text": "Yes", "value": "Yes", "isSelected": false, "price": ""
+            }
+            ,
+            {
+                "text": "No", "value": "No", "isSelected": false, "price": ""
+            }
+            ],
+            "conditionalLogic":"",
+            "productField":"",
+            "enablePasswordInput":"",
+            "multipleFiles":false,
+            "maxFiles":"",
+            "calculationFormula":"",
+            "calculationRounding":"",
+            "enableCalculation":"",
+            "disableQuantity":false,
+            "displayAllCategories":false,
+            "useRichTextEditor":false,
+            "postCustomFieldName":"student_visa_sponsorship",
+            "customFieldTemplate":"",
+            "customFieldTemplateEnabled":false,
+            "fields":"",
+            "displayOnly":"",
+            "checkboxLabel":"",
+            "personalDataExport":false,
+            "personalDataErase":false
+        }
+        ,
+        {
+            "type": "post_custom_field", "id": 9, "label": "Resume Upload", "adminLabel": "", "isRequired": false, "size": "medium", "errorMessage": "", "visibility": "visible", "inputs": null, "inputType": "fileupload", "formId": 1, "description": "Registrants now have the option to upload a resume, which will be available to attending companies. Attendees should still bring copies of their resumes on event day. \nFile names should be Lastname-Firstname.pdf so resumes can be easily found.", "allowsPrepopulate": false, "inputMask": false, "inputMaskValue": "", "inputMaskIsCustom": false, "maxLength": "", "labelPlacement": "", "descriptionPlacement": "above", "subLabelPlacement": "", "placeholder": "", "cssClass": "", "inputName": "", "noDuplicates": false, "defaultValue": "", "choices": null, "conditionalLogic": "", "productField": "", "enablePasswordInput": "", "multipleFiles": false, "maxFiles": "", "calculationFormula": "", "calculationRounding": "", "enableCalculation": "", "disableQuantity": false, "displayAllCategories": false, "useRichTextEditor": false, "postCustomFieldName": "student_resume", "customFieldTemplate": "", "customFieldTemplateEnabled": false, "fields": "", "displayOnly": "", "checkboxLabel": "", "maxFileSize": 2, "allowedExtensions": "pdf", "personalDataExport": false, "personalDataErase": false
+        }
+        ,
+        {
+            "type": "captcha", "id": 10, "label": "CAPTCHA", "adminLabel": "", "isRequired": false, "size": "medium", "errorMessage": "", "visibility": "visible", "inputs": null, "displayOnly": true, "formId": 1, "description": "", "allowsPrepopulate": false, "inputMask": false, "inputMaskValue": "", "inputMaskIsCustom": false, "maxLength": "", "inputType": "", "labelPlacement": "", "descriptionPlacement": "", "subLabelPlacement": "", "placeholder": "", "cssClass": "", "inputName": "", "noDuplicates": false, "defaultValue": "", "choices": "", "conditionalLogic": "", "productField": "", "captchaType": "", "captchaTheme": "", "fields": "", "personalDataExport": false, "personalDataErase": false, "multipleFiles": false, "maxFiles": "", "calculationFormula": "", "calculationRounding": "", "enableCalculation": "", "disableQuantity": false, "displayAllCategories": false, "useRichTextEditor": false
+        }
+        ,
+        {
+            "type":"date",
+            "id":11,
+            "label":"Date",
+            "adminLabel":"",
+            "isRequired":true,
+            "size":"medium",
+            "errorMessage":"",
+            "visibility":"hidden",
+            "inputs":null,
+            "dateType":"datepicker",
+            "calendarIconType":"none",
+            "formId":1,
+            "description":"",
+            "allowsPrepopulate":false,
+            "inputMask":false,
+            "inputMaskValue":"",
+            "inputMaskIsCustom":false,
+            "maxLength":"",
+            "inputType":"",
+            "labelPlacement":"",
+            "descriptionPlacement":"",
+            "subLabelPlacement":"",
+            "placeholder":"",
+            "cssClass":"",
+            "inputName":"",
+            "noDuplicates":false,
+            "defaultValue":"{date_mdy}",
+            "choices": "", "conditionalLogic": "", "calendarIconUrl": "", "dateFormat": "mdy", "productField": "", "multipleFiles": false, "maxFiles": "", "calculationFormula": "", "calculationRounding": "", "enableCalculation": "", "disableQuantity": false, "displayAllCategories": false, "useRichTextEditor": false, "fields": "", "displayOnly": "", "personalDataExport": false, "personalDataErase": false
+        }
+        ],
+        "version":"2.4.14",
+        "id":1,
+        "nextFieldId":12,
+        "useCurrentUserAsAuthor":true,
+        "postContentTemplateEnabled":false,
+        "postTitleTemplateEnabled":true,
+        "postTitleTemplate":"{Name (Last):2.6}, {Name (First):2.3}",
+        "postContentTemplate":"",
+        "lastPageButton":null,
+        "pagination":null,
+        "firstPageCssClass":null,
+        "subLabelPlacement":"below",
+        "cssClass":"",
+        "enableHoneypot":false,
+        "enableAnimation":false,
+        "save": {
+            "enabled":false,
+            "button": {
+                "type": "link", "text": "Save and Continue Later"
+            }
+        }
+        ,
+        "limitEntries":false,
+        "limitEntriesCount":"",
+        "limitEntriesPeriod":"",
+        "limitEntriesMessage":"",
+        "scheduleForm":true,
+        "scheduleStart":"10\/28\/2019",
+        "scheduleStartHour":12,
+        "scheduleStartMinute":1,
+        "scheduleStartAmpm":"am",
+        "scheduleEnd":"01\/23\/2020",
+        "scheduleEndHour":6,
+        "scheduleEndMinute":1,
+        "scheduleEndAmpm":"pm",
+        "schedulePendingMessage":"<img src=\"\/wp-content\/uploads\/2019\/04\/closed.png\" alt=\"registration not open\" class=\"form-message-img\">\r\n<h2 class=\"form-message\">Registration is currently closed.<\/h2>\r\n<p class=\"form-message\">Thanks for stopping by. Registration for the [insert page='career-fair-information' display='page-templates\/event-info-semester.php'][insert page='career-fair-information' display='page-templates\/event-info-year.php'] [insert page='career-fair-information' display='page-templates\/event-info-display-name.php'] will open on [insert page='career-fair-information' display='page-templates\/event-info-stud-open.php']<\/p>",
+        "scheduleMessage":"<img src=\"\/wp-content\/uploads\/2019\/04\/closed.png\" alt=\"registration not open\" class=\"form-message-img\"><h2 class=\"form-message\">Registration is now closed.<\/h2>\r\n<p class=\"form-message\">If you were unable to register online, you can still attend the [insert page='career-fair-information' display='page-templates\/event-info-semester.php'][insert page='career-fair-information' display='page-templates\/event-info-year.php'] [insert page='career-fair-information' display='page-templates\/event-info-display-name.php']. Just be sure to bring your GatorOne ID to register at the check-in desk on the event day.<\/p>",
+        "requireLogin":false,
+        "requireLoginMessage":"",
+        "is_active":"1",
+        "date_created":"2019-04-18 19:18:40",
+        "is_trash":"0",
+        "personalData": {
+            "preventIP":false,
+            "retention": {
+                "policy": "retain", "retain_entries_days": 1
+            }
+            ,
+            "exportingAndErasing": {
+                "columns": {
+                    "ip": {
+                        "export": false, "erase": false
+                    }
+                    ,
+                    "source_url": {
+                        "export": false, "erase": false
+                    }
+                    ,
+                    "user_agent": {
+                        "export": false, "erase": false
+                    }
+                }
+                ,
+                "enabled":false,
+                "identificationField":""
+            }
+        }
+        ,
+        "postAuthor":"1",
+        "postCategory":"1",
+        "postFormat":0,
+        "postStatus":"draft",
+        "confirmations":[ {
+            "id": "5cb8cd9025900", "name": "Default Confirmation", "isDefault": true, "type": "message", "message": "<p>Thanks for registering! We look forward to seeing you at the [insert page='career-fair-information' display='page-templates\/event-info-display-name.php']. Review the <a href=\"\/students\/\">Student Page<\/a> for interviewing tips and attire guidelines.<\/p><h3 style=\"text-align: center;\">Event Details:<\/h3><p style=\"text-align: center;\"><strong>Date<\/strong>: [insert page='career-fair-information' display='page-templates\/event-info-date-comma.php'][insert page='career-fair-information' display='page-templates\/event-info-year.php' inline] <br \/><strong>Time<\/strong>: [insert page='career-fair-information' display='page-templates\/event-info-start-time.php']to [insert page='career-fair-information' display='page-templates\/event-info-end-time.php']\u00a0<br \/><strong>Location<\/strong>: [insert page='career-fair-information' display='page-templates\/event-info-location.php']<\/p>", "url": "", "pageId": 0, "queryString": "", "disableAutoformat": false, "conditionalLogic": []
+        }
+        ],
+        "notifications":[ {
+            "id":"5cb8cd9023187",
+            "isActive":false,
+            "to":"{admin_email}",
+            "name":"Admin Notification",
+            "event":"form_submission",
+            "toType":"email",
+            "subject":"New submission from {form_title}",
+            "message":"{all_fields}"
+        }
+        ,
+        {
+            "isActive": true, "name": "Registrant Notification", "service": "wordpress", "event": "form_submission", "to": "15", "toType": "field", "cc": "", "bcc": "", "subject": "Registration Confirmation - CISE Career Fair", "message": "<img class=\"aligncenter wp-image-51 size-page_header\" src=\"https:\/\/test.careerfair.cise.ufl.edu\/wp-content\/uploads\/2019\/03\/frenchfries-780x274.png\" alt=\"French fry hero\" width=\"780\" height=\"274\" \/>\r\n<p style=\"font-size: 16px;\">Thank you for registering! We look forward to seeing you at the [insert page='career-fair-information' display='page-templates\/event-info-display-name.php']. Review the <a href=\"https:\/\/test.careerfair.cise.ufl.edu\/students\/\">Student Page<\/a> for interviewing tips and attire guidelines.<\/p>\r\n<span style=\"font-size: 18px;\"><strong>Registration Details:<\/strong><\/span>\r\n\r\n<span style=\"font-size: 16px;\"><strong>Name:<\/strong> {Name (First):20.3} {Name (Last):20.6}<\/span>\r\n\r\n<span style=\"font-size: 16px;\"><strong>UFID:<\/strong> {UFID:2}<\/span>\r\n\r\n<span style=\"font-size: 16px;\"><strong>Status:<\/strong> {Status:16}<\/span>\r\n\r\n<span style=\"font-size: 16px;\"><strong>Department:<\/strong> {Department:17}<\/span>\r\n\r\n<span style=\"font-size: 16px;\"><strong>Visa Sponsorship: <\/strong>{Visa Sponsorship:18}<\/span>\r\n\r\n<span style=\"font-size: 16px;\"><strong>Resume:<\/strong> {Resume Upload:19}<\/span>\r\n<p style=\"text-align: center; font-size: 14px;\"><em>**NOTE: <a href=\"mailto:webmaster@cise.ufl.edu?subject=Registration%20Update%20CISE%20Career%20Fair&amp;body=Please%20fill%20out%20the%20following%20information.%0D%0A%0D%0AYour%20name:%0D%0A%0D%0APreferred%20contact%20email:%0D%0A%0D%0AInformation%20needing%20to%20be%20updated:%0D%0A%0D%0A\">Contact us<\/a> if you would like to make any changes to your registration.**<\/em><\/p>\r\n<p style=\"text-align: center;\"><span style=\"font-size: 18px;\"><strong>Event Details:<\/strong><\/span>\r\n<span style=\"font-size: 16px;\"><strong>Date<\/strong>: [insert page='career-fair-information' display='page-templates\/event-info-date-comma.php'][insert page='career-fair-information' display='page-templates\/event-info-year.php' inline]\r\n<strong>Time<\/strong>: [insert page='career-fair-information' display='page-templates\/event-info-start-time.php']to [insert page='career-fair-information' display='page-templates\/event-info-end-time.php']\r\n<strong>Location<\/strong>: [insert page='career-fair-information' display='page-templates\/event-info-location.php']<\/span><\/p>", "from":"{admin_email}", "fromName": "CISE Career Fair", "replyTo": "", "routing": null, "conditionalLogic": null, "disableAutoformat": false, "enableAttachments": false, "id": "5d5e92da3000f"
+        }
+        ]
+    }
+    ,
+    "version":"2.4.14"
+}
